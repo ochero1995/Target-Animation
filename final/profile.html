@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Target Animation</title>
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>	
+			<div class="wrapper">
+				<div>
+					<ul class="main-nav" id="myNav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="signup.html">Sign Up</a></li>
+						<li><a href="#" id="myBtn">Log In</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="profile.html">My Profile</a></li>
+						<li><a href="forum.html">Forum</a></li>
+						<li class="icon">
+					    	<a href="javascript:void(0);" onclick="myFunction()">&equiv;</a></li>
+					</ul>
+				</div><!--/.main-header-->   
+				
+					<div class="banner">
+						<img class="logo" src="img/Logo.svg" alt="City">
+						<h1 class="headline">Target Animation inc. 2016&copy;</h1>
+						<span class="tagline">Home to all great SVG artists</span>
+					</div><!--/.banner-->
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+					  <!-- Modal content -->
+					  <div class="modal-content">
+					    <span class="close">X</span>
+					    <form id="login_form" action="#" method="POST" enctype="multipart/form-data">
+								<div class="row">
+									<h3>Enter your login details</h3>
+								</div>
+
+								<div class="row">
+									<label for="email">Your email:</label><br />
+									<input id="email" name="email" type="text" size="30" /><br />
+								</div>
+								<div class="row">
+									<label for="message">Password:</label><br />
+									<input id="password" name="password" type="text" size="30" />
+								</div>
+								<br>
+								<input id="login" type="submit" value="Log in" />
+						</form>	
+
+						<div class="row"><p>Forgot your details? please click <a href="">here</a></p></div>
+					  </div>
+
+					</div>
+
+					<div class="row padding">
+						<div class="col-2">
+							<h1>Name </h1>
+							<img src="img/Logo.svg">
+							<p><strong>Description:</strong> Lorem ipsum dolor sit amet</p>
+						</div>
+
+						<div class="col-9" id="focus">
+
+							<ul class="tab">
+							  <li><a href="#focus" class="tablinks" id="active" onclick="openCity(event, 'Profile')">Profile</a></li>
+							  <li><a href="#focus" class="tablinks" onclick="openCity(event, 'Projects')">Projects</a></li>
+							  <li><a href="#focus" class="tablinks" onclick="openCity(event, 'Gallery')">Gallery</a></li>
+							  <li><a href="#focus" class="tablinks" onclick="openCity(event, 'Settings')">Settings</a></li>
+							</ul>
+
+							<div id="Profile" class="tabcontent">
+							  <div class="row">
+							  	<div class="col-6">
+							  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							  	</div>
+							  	<div class="col-6">
+							  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							  	</div>
+							  </div>
+							  <div class="row">
+							  	<div class="col-6">
+							  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							  	</div>
+							  	<div class="col-6">
+							  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							  	</div>
+							  </div>
+							  <div class="row">
+							  	<div class="col-6">
+							  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							  	</div>
+							  	<div class="col-6">
+							  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							  	</div>
+							  </div>
+							</div>
+
+							<div id="Projects" class="tabcontent">
+							  <h1>List of projects</h1>
+							  <ul>
+							  	<li>Something</li>
+							  	<li>Something</li>
+							  	<li>Something</li>
+							  </ul>
+							<form action="">
+								<input type="submit" value="Upload New Content">
+							</form>
+							</div>
+
+							<div id="Gallery" class="tabcontent">
+							  <div class="container">
+								<div class="grid">
+								    <div class="cell">
+								      <a href="img/breakfastdoodles.jpg" data-lightbox="images" data-title="Caption"><img src="img/breakfastdoodles.jpg" class="responsive-image"></a>
+								    </div>
+
+								    <div class="cell">
+								      <a href="img/breakfastdoodles.jpg" data-lightbox="images" data-title="Caption"><img src="img/farmhouse.jpg" class="responsive-image"></a>						    
+								    </div>
+
+								    <div class="cell">
+								      <a href="img/breakfastdoodles.jpg" data-lightbox="images" data-title="Caption"><img src="img/runningfromfonts.jpg" class="responsive-image"></a>
+								    </div>
+
+								    <div class="cell">
+								      <a href="img/breakfastdoodles.jpg" data-lightbox="images" data-title="Caption"><img src="img/olympics.jpg" class="responsive-image"></a>
+								    </div>
+
+								    <div class="cell">
+								      <a href="img/breakfastdoodles.jpg" data-lightbox="images" data-title="Caption"><img src="img/cloud.jpg" class="responsive-image"></a>
+								    </div>
+
+								    <div class="cell">
+								      <a href="img/breakfastdoodles.jpg" data-lightbox="images" data-title="Caption"><img src="img/backtoschool.jpg" class="responsive-image"></a>
+								    </div>
+								  </div>						
+							</div>
+							</div>
+
+							<div id="Settings" class="tabcontent">	
+							  <div class="row wrapp_elements">
+								<div class="col-12">
+									<form id="settings_form" action="#" method="POST" enctype="multipart/form-data">
+										<div class="row">
+											<h3>Update your settings here:</h3>
+											<label for="name">Update Name:</label><br />
+											<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+										</div>
+										<div class="row">
+											<label for="email">Change your email:</label><br />
+											<input id="email" name="email" type="text" size="30" /><br />
+										</div>
+										<div class="row">
+											<label for="message"> Change Password:</label><br />
+											<input id="password" name="password" type="text" size="30" />
+										</div>
+										<br>
+										<input id="submit_button" type="submit" value="Submit changes" />
+									</form>	
+
+									<form>
+										<div class="row">
+											<h3>Do you wish to delete your account?</h3>
+											<input type="submit" value="Yes" class="danger">
+										</div>
+										
+									</form>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					
+					
+					<footer class="main-footer">
+						
+						<div class="row center">
+							<div class="row">
+								<div class="col-4"> 
+								<ul class="left list-styling-disc">
+									<li>Item 1</li>
+									<li>Item 2</li>
+									<li>Item 3</li>
+								</ul>
+								</div>
+								<div class="col-4 center">
+									<p>Target animation &copy; 2016</p>
+									<p>Facebook | Twitter | Instagram | Google +</p>
+								</div>
+								<div class="col-4"></div>
+							</div>
+						</div>
+				
+					</footer>
+			</div>
+
+<script type="text/javascript" src="js/scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+		
+</body>
+</html>
