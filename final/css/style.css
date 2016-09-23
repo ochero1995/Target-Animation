@@ -111,6 +111,10 @@ ul.main-nav li.icon {
 	float: right;
 }
 
+a.active {
+  background-color: #4CAF50;
+}
+
 .padding {
 	padding: 10px;
 }
