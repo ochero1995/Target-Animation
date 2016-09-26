@@ -60,18 +60,20 @@
 
 					<div class="row padding">
 						<div class="col-2">
-							<h1>Name </h1>
-							<img src="img/Logo.svg">
-							<p><strong>Description:</strong> Lorem ipsum dolor sit amet</p>
+							<div>
+								<h1>Name </h1>
+								<img src="img/Logo.svg">
+								<p><strong>Description:</strong> Lorem ipsum dolor sit amet</p>
+							</div>
 						</div>
 
-						<div class="col-9" id="focus">
+						<div class="col-9">
 
 							<ul class="tab">
-							  <li><a href="#0" class="tablinks active" onclick="openCity(event, 'Profile')">Profile</a></li>
-							  <li><a href="#0" class="tablinks" onclick="openCity(event, 'Projects')">Projects</a></li>
-							  <li><a href="#0" class="tablinks" onclick="openCity(event, 'Gallery')">Gallery</a></li>
-							  <li><a href="#0" class="tablinks" onclick="openCity(event, 'Settings')">Settings</a></li>
+							  <li><a href="#0" class="tablinks" onclick="openTab(event, 'Profile')">Profile</a></li>
+							  <li><a href="#0" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a></li>
+							  <li><a href="#0" class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</a></li>
+							  <li><a href="#0" class="tablinks" onclick="openTab(event, 'Settings')">Settings</a></li>
 							</ul>
 
 							<div id="Profile" class="tabcontent">
@@ -191,15 +193,15 @@
 						<div class="row center">
 							<div class="row">
 								<div class="col-4"> 
-								<ul class="left list-styling-disc">
-									<li>Item 1</li>
-									<li>Item 2</li>
-									<li>Item 3</li>
-								</ul>
 								</div>
 								<div class="col-4 center">
-									<p>Target animation &copy; 2016</p>
-									<p>Facebook | Twitter | Instagram | Google +</p>
+									<p>Follow us on</p>
+									<p class="socialmedia"> 
+										<a href="#"><img src="img/facebooklg.svg" alt="facebooklg"></a>
+										<a href="#"><img src="img/instalg.svg" alt=""></a>
+										<a href="#"><img src="img/twitterlg.svg" alt=""></a>
+									</p>
+									<p>Target Animation &copy; 2016</p>
 								</div>
 								<div class="col-4"></div>
 							</div>

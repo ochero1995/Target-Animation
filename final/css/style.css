@@ -79,7 +79,7 @@ ul.main-nav li.icon {
 	font-size: 100px;
 }
 
-/* ---- Others ---- */
+/* ---- Extra styling ---- */
 
 .wrapp_elements{
   margin-top: 4em;
@@ -111,10 +111,6 @@ ul.main-nav li.icon {
 	float: right;
 }
 
-a.active {
-  background-color: #4CAF50;
-}
-
 .padding {
 	padding: 10px;
 }
@@ -134,21 +130,27 @@ input[type=submit]{
     cursor: pointer;
 }
 
+.socialmedia img{
+  width: 20px;
+  height: 20px;
+}
+
+/* ---- Modal ---- */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -158,14 +160,13 @@ input[type=submit]{
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.5s
 }
 
-/* The Close Button */
 .close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -186,7 +187,7 @@ input[type=submit]{
     to {top:0; opacity:1}
 }
 
-/* ---- Layout Containers ---- */
+/* ---- Layout Containers and Grids ---- */
 
 .wrapper{
 	width: 100%;
@@ -243,7 +244,7 @@ input[type=submit]{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/* ---- Page Elements ---- */
+/* ---- Banner Elements ---- */
 
 .logo {
 	width: 200px;
@@ -272,22 +273,50 @@ input[type=submit]{
   padding: 10px;
 }
 
-/* ---- Profile Tab ---- */
 
-/* Style the list */
-ul.tab {
-    list-style-type: none;
+/* ---- Forum ---- */
+
+.threads{
     margin: 0;
     padding: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.threads a:hover{
+  text-decoration: underline;
+
+}
+
+.title{
+  background: #6666FF;
+  color: #fff;
+}
+
+.advertisment{
+  border: 1px solid #ccc;
+  height: 200px;
+  width: 200px;
+}
+
+.post{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* ---- Profile Tab ---- */
+
+ul.tab {
+    list-style-type: none;
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 
-/* Float the list items side by side */
 ul.tab li {float: left;}
 
-/* Style the links inside the list items */
 ul.tab li a {
     display: inline-block;
     color: black;
@@ -298,20 +327,17 @@ ul.tab li a {
     font-size: 17px;
 }
 
-/* Change background color of links on hover */
 ul.tab li a:hover {background-color: #ddd;}
 
-/* Create an active/current tablink class */
 ul.tab li a:focus, .active {background-color: #ccc;}
 
-/* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
     -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    animation: fadeEffect 1s; 
 }
 
 @-webkit-keyframes fadeEffect {
@@ -327,6 +353,8 @@ ul.tab li a:focus, .active {background-color: #ccc;}
 /* ================================= 
   Media Queries
 ==================================== */
+
+/* ---- Main content desktop viewport ---- */
 
 @media screen and (max-width:680px) {
 	ul.main-nav li:not(:first-child) {
@@ -354,15 +382,13 @@ ul.tab li a:focus, .active {background-color: #ccc;}
     width: 100%;
   	}
 
-	/* ---- Float clearfix ---- */
-
-	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
+  #forum_sidebar{
+    display: none;
+  }
 
 }
+
+/* ---- Main-content mobile/tablet viewport ---- */
 
 @media screen and (max-width:680px) {
 	ul.main-nav.responsive {
@@ -387,6 +413,8 @@ ul.tab li a:focus, .active {background-color: #ccc;}
   	}
 }
 
+/* ---- Gallery media queries mobile/tablet viewport---- */
+
 @media screen and (min-width: 600px) {
   .grid {
     display: flex;
@@ -397,6 +425,8 @@ ul.tab li a:focus, .active {background-color: #ccc;}
     width: 50%;
   }
 }
+
+/* ---- Gallery mediaqueries desktop viewport ---- */
 
 @media screen and (min-width: 1000px) {
   .cell {
